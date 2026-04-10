@@ -9,5 +9,8 @@ all: $(TARGET)
 $(TARGET): $(SRCS)
 	$(CXX) $(CXXFLAGS) $(SRCS) -o $(TARGET) $(LIBS)
 
+fsan: $(SRCS)
+	$(CXX) $(CXXFLAGS) -g -fsanitize=address $(SRCS) -o $(TARGET) $(LIBS)
+
 clean:
 	rm -f $(TARGET)
