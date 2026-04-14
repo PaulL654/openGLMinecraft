@@ -1,2 +1,2 @@
-# openGLMinecraft
+# openGLTuto
 using https://learnopengl.com/
